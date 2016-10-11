@@ -6,8 +6,8 @@
     require ("vendor/phpmailer/phpmailer/class.phpmailer.php");
    
 
-
-
+    $clave = $_GET['password'];
+    
     $mail = new PHPMailer;
     
     //Enable SMTP debugging. 
@@ -20,7 +20,7 @@
     $mail->SMTPAuth = true;                          
     //Provide username and password     
     $mail->Username = "npadulesir15dw@ikzubirimanteo.com";                 
-    $mail->Password = "xxx";                           
+    $mail->Password = $clave;                           
     //If SMTP requires TLS encryption then set it
     $mail->SMTPSecure = "tls";                           
     //Set TCP port to connect to 
