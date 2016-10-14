@@ -1,5 +1,11 @@
 <?php 
 
+                                            /*Instalar composer 
+                                            php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
+                                            php composer.phar : comandos a poder utilizar 
+                                            composer update: crear librerias de mailing*/
+                                            
+
    //acceder a las librerias 
    require("vendor/autoload.php");
    require ("vendor/phpmailer/phpmailer/PHPMailerAutoload.php");
