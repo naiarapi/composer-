@@ -1,5 +1,5 @@
-<?php 
-
+ 
+<?php
                                             /*Instalar composer 
                                             php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
                                             php composer.phar : comandos a poder utilizar 
@@ -33,15 +33,15 @@
     $mail->Port = 587;                                   
     
     $mail->From = "npadulesir15dw@ikzubirimanteo.com";
-    $mail->FromName = "Full Name";
+    $mail->FromName = "Naiara Padules";
     
     $mail->addAddress("ederferte@gmail.com", "Recepient Name");
     
     $mail->isHTML(true);
     
-    $mail->Subject = "Subject Text";
-    $mail->Body = "<i>Mail body in HTML</i>";
-    $mail->AltBody = "This is the plain text version of the email content";
+    $mail->Subject = "Composer Prueba";
+    $mail->Body = "<i>BIENVENIDO!!!!</i>";
+    $mail->AltBody = "Prueba para la validez del mailing";
     
     if(!$mail->send()) 
     {
@@ -51,6 +51,5 @@
     {
         echo "Message has been sent successfully";
     }
-
 
 ?>
